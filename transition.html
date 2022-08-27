@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+    <style>
+        .container,
+        .inner {
+            height: 100px;
+            width: 100px;
+            border: 1px solid goldenrod;
+        }
+
+        .container {
+            background-color: aqua;
+            transition: height 1s, width 1s, transform 2s;
+
+        }
+
+        .inner {
+            background-color: plum;
+            transform: scale(.75);
+            transition: height 1s, width 1s, transform 2s;
+        }
+
+        .container:hover {
+            height: 200px;
+            width: 200px;
+            transform: rotate(180deg);
+        }
+
+        .inner:hover {
+            height: 150px;
+            width: 150px;
+            background-color: aquamarine;
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+
+<body>
+    <h2>This is Transition File</h2>
+    <div class="container">
+        <div class="inner">box-1</div>
+    </div>
+    <div class="container">
+        <div class="inner">box-2</div>
+    </div>
+    <div class="container">
+        <div class="inner">box-3</div>
+    </div>
+</body>
+
+</html>
